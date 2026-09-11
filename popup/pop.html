@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intent</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <main class="intent-card">
+    <p class="label">INTENT</p>
+
+    <section id="question-screen">
+      <h1>Why did you open this?</h1>
+
+      <p id="website-message">
+        Do you have a goal in mind?
+      </p>
+
+      <div class="actions">
+        <button id="yes-button">Yes</button>
+        <button id="no-button">No</button>
+      </div>
+    </section>
+
+    <section id="task-screen" hidden>
+      <h1>What's the task/goal?</h1>
+      <p>Tell Intent what you came here to do.</p>
+       <input
+         id="task-input"
+         type="text"
+         placeholder="Learn JavaScript..."
+         autocomplete="off"
+      >
+
+      <button id="start-button">Start</button>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

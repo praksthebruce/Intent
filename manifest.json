@@ -1,0 +1,36 @@
+{
+
+ "manifest_version": 3,
+    "name": "Intent" ,
+    "version": "1.0.0" ,
+     "description": "Intent Reminds you about your goal of why you opened an app or website, It's simple yet effective timer logic Impact your work positively." ,
+
+
+   "permissions": [
+       "tabs",
+         "storage",
+         "alarms"
+   ] ,
+
+   "Host_permissions": [
+        "https://www.youtube.com/*",
+    
+        "https://www.instagram.com/*",
+    
+        "https://www.reddit.com/*",
+    
+        "https://x.com/*"
+
+   ] ,
+   
+   "background": {
+        "service_worker": "Bg/servo-worker.js"
+    },
+
+    "action":
+    {
+        "default_popup": "popup.html",
+        "default_title": "Intent"
+    }
+
+}
